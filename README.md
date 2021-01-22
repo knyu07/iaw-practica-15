@@ -6,7 +6,7 @@ YAML es un formato para guardar objetos de datos con estructura de árbol. Sus s
 
 Nuestro archivo estará compuesto por 3 contenedores: 
 
-- Wordpress con apache2
+- Wordpress 
 - phpmyadmin
 - MySQL
 
@@ -58,7 +58,7 @@ mysql:
 ```
 
 ### Wordpress
-Usaremos ña imagen Wordpress y necesitaremos las variables para el archivo wp-config.php. Crearemos un volumen para la base de datos de la web que se guardará dentro de /var/www/html. Usará las redes del front y dphpmyadmin:
+Usaremos ña imagen Wordpress y necesitaremos las variables para el archivo wp-config.php. Crearemos un volumen para la base de datos de la web que se guardará dentro de /var/www/html. Usará las redes del front y phpmyadmin:
         image: phpmyadmin
         environment:
             - PMA_HOST=mysql
