@@ -58,7 +58,7 @@ mysql:
 ```
 
 ### Wordpress
-Usaremos ña imagen Wordpress y necesitaremos las variables para el archivo wp-config.php. Crearemos un volumen para la base de datos de la web que se guardará dentro de /var/www/html. Usará las redes del front y phpmyadmin:
+Usaremos la imagen Wordpress y necesitaremos las variables para el archivo wp-config.php. Crearemos un volumen para la base de datos de la web que se guardará dentro de /var/www/html. Usará las redes del front y phpmyadmin:
         image: phpmyadmin
         environment:
             - PMA_HOST=mysql
